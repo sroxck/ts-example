@@ -13,4 +13,4 @@ function printLabeltwo(printObj) {
 }
 printLabel({ size: "333" });
 var namess = "33";
-//接口的继承
+var sroxck = { mouth: "small", face1: "big" };

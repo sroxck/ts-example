@@ -24,3 +24,12 @@ let namess:names = "33"
 
 //接口的继承
 
+//接口1 
+interface faceOne {
+    face1:string
+}
+interface head extends faceOne {
+    mouth:string
+}
+let sroxck:head={mouth:"small",face1:"big"}
+
