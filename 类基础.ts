@@ -30,3 +30,34 @@ class DemoSon extends Demo{
         // console.log(this.username) // 报错 private 只能在本类中使用
     }
 }
+// 类的构造函数
+class Demo2{
+    uname:string
+    constructor(name:string){
+        this.uname = name
+    }
+}
+let p = new Demo2("sroxck")
+console.log(p.uname);
+// 类的成员变量声明必须赋值或者在构造器里面赋值,可以简写
+class Demo3{
+    constructor(public name:string){} // 省略成员变量的声音和构造函数方法体内的赋值,直接在参数上加入public修饰符就可以完成声明成员变量并赋值的工作
+}
+let person = new Demo3('sims')
+console.log(person.name); // 和上面相同的效果
+
+//类的构造函数继承
+class DemoExtends {
+    constructor(public name:string){}
+}
+class DemoExtendsSon extends DemoExtends {
+    constructor(public age:number){
+        super("sroxck:jdd") // 子类继承父类的时候,子类如果要写构造方法,必须手动调用super()去执行父类的构造方法,此语句必须放在第一行(先有父,再有子)
+        // 父类没有构造方法也必须调用,因为会有一个默认的空的构造函数
+    }
+}
+console.log(new DemoExtendsSon(22).age,new DemoExtendsSon(22).name);
+
+
+
+
