@@ -10,7 +10,7 @@ variable = function (name, gsds) {
     return name;
 };
 variable('sf', 333);
-var arrlist = ['1', '2'];
+var arrlist = ['1', '2',];
 var arrlist1 = { name: 'name' };
 var arrlistthree = [1, 3, 4];
 // arrlistthree[0] = 2 // 只读的索引签名是不可以通过索引修改值的

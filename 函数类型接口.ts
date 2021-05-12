@@ -20,7 +20,7 @@ variable('sf',333)
 interface indexInterFace{
     [index:number]:string
 }
-let arrlist:indexInterFace=['1','2']
+let arrlist:indexInterFace=['1','2',]
 
 interface indexInterFace1{
     [index:string]:string
