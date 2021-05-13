@@ -59,5 +59,41 @@ class DemoExtendsSon extends DemoExtends {
 console.log(new DemoExtendsSon(22).age,new DemoExtendsSon(22).name);
 
 
+// 类的getter和setter
+class Shower{
+    constructor(private showerTime:number){}
+    get shower(){
+        return this.showerTime - 10
+    }
+    set shower(num:number){
+        this.showerTime = num+10
+    }
+}
 
+const xizao = new Shower(30)
+xizao.shower = 40
+console.log(xizao.shower);
+// 设置get和set后 可以直接通过对象.属性的方式去.get的方法名 获取值而不用调用
+// set 直接通过set方法名 赋值即可,可以把get和set方法的名字看做是一个成员变量,访问和修改时,会执行对应的包装函数
+// get和set的作用: 可以使用get和set暴露出私有private成员属性,让外界可以访问到经过包装后的私有属性
 
+// 类的静态属性和方法 static
+class MyShower{
+    static showerTime:number = 20
+    static viewShowerTime(){
+        console.log(this.showerTime);
+    }
+}
+MyShower.viewShowerTime()
+// 静态方法和属性可以直接通过类名进行访问
+
+// 类的只读属性
+class ReadonlyClass{
+    readonly _name:string
+    constructor(name:number){
+        this._name=name as unknown as string
+    }
+}
+console.log(new ReadonlyClass(22)._name);
+// 给类的成员变量添加readonly修饰符即可只读 
+// 类型强制转换 先转为unknown 在转换为你需要的类型即可,会造成数据损失和精度丢失
