@@ -1,6 +1,4 @@
-"use strict";
-// 使用接口来描述类的方法和属性
-var TimeTool = /** @class */ (function () {
+var TimeTool = (function () {
     function TimeTool() {
     }
     TimeTool.prototype.setTime = function (date) {

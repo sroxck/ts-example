@@ -41,7 +41,7 @@ let p = new Demo2("sroxck")
 console.log(p.uname);
 // 类的成员变量声明必须赋值或者在构造器里面赋值,可以简写
 class Demo3{
-    constructor(public name:string){} // 省略成员变量的声音和构造函数方法体内的赋值,直接在参数上加入public修饰符就可以完成声明成员变量并赋值的工作
+    constructor(public name:string){} // 省略成员变量的声明和构造函数方法体内的赋值,直接在参数上加入public修饰符就可以完成声明成员变量并赋值的工作
 }
 let person = new Demo3('sims')
 console.log(person.name); // 和上面相同的效果
