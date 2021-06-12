@@ -1,3 +1,4 @@
+"use strict";
 function demo(colorobj) {
     var result = {};
     if (colorobj.color) {

@@ -1,3 +1,4 @@
+"use strict";
 function printLabel(printObj) {
     console.log(printObj.size);
 }

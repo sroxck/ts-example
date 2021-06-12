@@ -1,3 +1,4 @@
+"use strict";
 var isBool = false;
 var isString = "字符串";
 var isNumber = 100;

@@ -1,4 +1,5 @@
 abstract class DemoDemo{
+    //#name 可以使用#来定义私有成员属性,这样是真正的私有,背后会使用wakemap,private是用的自执行函数的作用域 是可以被改写的
     names:string="33"
     abstract logerr():void
     abstract sf:string
@@ -7,6 +8,9 @@ abstract class DemoDemo{
     }
 }
 class demodemo extends DemoDemo{
+    constructor(){
+        super()
+    }
     sf='33'
     logerr(){
         console.log("33");
